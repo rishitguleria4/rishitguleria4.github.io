@@ -17,7 +17,7 @@
   line-height: 70px;
   font-weight: 400;
   text-align: center;
-  background: linear-gradient(0deg, #0d9488, #ffffff);
+  background: linear-gradient(0deg, #7e22ce, #ffffff);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -51,6 +51,14 @@
   margin: 0;
 }
 
+.career-role h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  color: var(--accentColor);
+  transition: color 1.5s ease;
+}
+
 .career-info-in {
   display: flex;
   width: 40%;
@@ -80,9 +88,15 @@
   text-transform: capitalize;
   margin: 10px 0px;
   color: var(--accentColor);
+  transition: color 1.5s ease;
 }
 
-.career-timeline {
+.career-container h2 span {
+  color: var(--accentColor);
+  transition: color 1.5s ease;
+}
+
+.career-timeline::before {
   position: absolute;
   top: -50px;
   left: 50%;
@@ -90,7 +104,7 @@
   width: 3px;
   height: 100%;
   background-image: linear-gradient(to top,
-      #14b8a6 20%,
+      #9333ea 20%,
       var(--accentColor) 50%,
       transparent 95%);
   max-height: 0%;
@@ -101,23 +115,40 @@
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 50%);
-  background-color: #14b8a6;
+  background-color: #9333ea;
   width: 10px;
   height: 10px;
   border-radius: 50px;
-  box-shadow: 0px 0px 5px 2px #67e8f9, 0px 0px 15px 8px #5eead4,
-    0px 0px 110px 20px #a5f3fc;
+  box-shadow: 0px 0px 5px 2px #c084fc, 0px 0px 15px 8px #d8b4fe,
+    0px 0px 110px 20px #e9d5ff;
   animation: timeline 0.8s linear infinite forwards;
 }
 
-@keyframes timeline {
+.career-info-box {
+  width: calc(100% - 60px);
+  margin-left: 30px;
+  margin-top: 40px;
+  background: var(--glassBackground);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glassBorder);
+  padding: 20px 30px;
+  border-radius: 16px;
+  position: relative;
+  transition: background 1.5s ease, border 1.5s ease, box-shadow 0.3s ease;
+}
+.career-info-box:hover {
+  box-shadow: var(--glowEffect);
+  border-color: var(--accentColor);
+}
 
+@keyframes timeline {
   10%,
   20%,
   50%,
   70%,
   90% {
-    box-shadow: 0px 0px 5px 2px #67e8f9;
+    box-shadow: 0px 0px 5px 2px #c084fc;
   }
 
   10%,
@@ -126,19 +157,19 @@
   100%,
   64%,
   80% {
-    box-shadow: 0px 0px 5px 2px #67e8f9, 0px 0px 15px 5px #5eead4,
-      0px 0px 110px 20px #a5f3fc;
+    box-shadow: 0px 0px 5px 2px #c084fc, 0px 0px 15px 5px #d8b4fe,
+      0px 0px 110px 20px #e9d5ff;
   }
 }
 
 @keyframes timeline2 {
   0% {
-    box-shadow: 0px 0px 5px 2px #67e8f9;
+    box-shadow: 0px 0px 5px 2px #c084fc;
   }
 
   100% {
-    box-shadow: 0px 0px 5px 2px #67e8f9, 0px 0px 15px 5px #5eead4,
-      0px 0px 110px 20px #a5f3fc;
+    box-shadow: 0px 0px 5px 2px #c084fc, 0px 0px 15px 5px #d8b4fe,
+      0px 0px 110px 20px #e9d5ff;
   }
 }
 

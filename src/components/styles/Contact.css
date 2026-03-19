@@ -28,6 +28,16 @@
 .contact-box {
   display: flex;
   flex-direction: column;
+  padding: 30px;
+  background: var(--glassBackground);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glassBorder);
+  border-radius: 16px;
+  transition: background 1.5s ease, border 1.5s ease, box-shadow 0.3s ease;
+}
+.contact-box:hover {
+  box-shadow: var(--glowEffect);
 }
 
 .contact-flex p {
@@ -48,6 +58,7 @@ a.contact-social {
 
 .contact-box h2>span {
   color: var(--accentColor);
+  transition: color 1.5s ease;
 }
 
 .contact-box h5 {

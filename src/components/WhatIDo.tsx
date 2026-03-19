@@ -87,22 +87,22 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>FRONTEND</h3>
-              <h4>Building Interactive UIs</h4>
+              <h3>APPLIED AI & FULL STACK</h3>
+              <h4>LLM Integrations & Async Services</h4>
               <p>
-                Crafting performant, responsive interfaces with modern frameworks.
-                From SPAs to micro-frontends, I deliver pixel-perfect experiences.
+                Building intelligent backend pipelines and interactive frontends.
+                From local LLM deployments (Ollama) to real-time React dashboards, I deliver
+                complete product solutions.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">React.js</div>
-                <div className="what-tags">Angular</div>
+                <div className="what-tags">Python</div>
+                <div className="what-tags">React</div>
                 <div className="what-tags">Next.js</div>
-                <div className="what-tags">TypeScript</div>
-                <div className="what-tags">JavaScript</div>
-                <div className="what-tags">Material UI</div>
-                <div className="what-tags">HTML5</div>
-                <div className="what-tags">CSS3</div>
+                <div className="what-tags">Express</div>
+                <div className="what-tags">PostgreSQL</div>
+                <div className="what-tags">Async Processing</div>
+                <div className="what-tags">Ollama</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -126,22 +126,22 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>BACKEND</h3>
-              <h4>Scalable Server Architecture</h4>
+              <h3>SYSTEMS & PERFORMANCE</h3>
+              <h4>Low-Latency & Architecture</h4>
               <p>
-                Designing robust APIs and microservices. From CMS platforms to
-                complex business logic, I build backends that scale.
+                Designing highly performant architectures and matching engines.
+                I specialize in C++ optimization, system-level debugging, and
+                building scale-ready distributed infrastructure.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Node.js</div>
-                <div className="what-tags">NestJS</div>
-                <div className="what-tags">Express.js</div>
-                <div className="what-tags">MongoDB</div>
-                <div className="what-tags">PostgreSQL</div>
-                <div className="what-tags">REST APIs</div>
-                <div className="what-tags">Microservices</div>
-                <div className="what-tags">Python</div>
+                <div className="what-tags">C++</div>
+                <div className="what-tags">System Design</div>
+                <div className="what-tags">Low-Latency Systems</div>
+                <div className="what-tags">Debugging</div>
+                <div className="what-tags">Docker</div>
+                <div className="what-tags">MySQL</div>
+                <div className="what-tags">Git & GitHub</div>
               </div>
               <div className="what-arrow"></div>
             </div>

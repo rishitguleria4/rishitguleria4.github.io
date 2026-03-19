@@ -5,35 +5,19 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "Solid Starters",
-    category: "Low-Code Platform",
-    tools: "Angular, Next.js, NestJS, MongoDB",
-    image: "/images/Solidx.png",
+    title: "AI Incident Triage",
+    category: "Async Incident Platform",
+    tools: "Node.js, Express, React, PostgreSQL, Redis, BullMQ, Ollama",
+    image: "/images/placeholder.webp",
+    description: "End-to-end asynchronous incident triage platform using control-plane and worker-plane architecture.<br/><br/>• Implemented REST APIs with Express to validate and persist incidents in PostgreSQL, enqueueing background jobs via Redis and BullMQ.<br/>• Designed a fault-isolated worker service using a local LLM (Phi-3 via Ollama), ensuring AI failures do not impact core reliability.<br/>• Developed a React frontend with polling-based live updates while keeping business logic centralized."
   },
   {
-    title: "Radix",
-    category: "E-Commerce",
-    tools: "Angular, Next.js, NestJS, CMS",
-    image: "/images/radix.png",
-  },
-  {
-    title: "Bond Cancellation",
-    category: "Import-Export Automation",
-    tools: "Angular, Next.js, NestJS, Workflows",
-    image: "/images/bond.png",
-  },
-  {
-    title: "Sapphire",
-    category: "CRM Platform",
-    tools: "AngularJS, NestJS, PostgreSQL",
-    image: "/images/sapphire.png",
-  },
-  {
-    title: "Mpro",
-    category: "Insurance Platform",
-    tools: "React.js, Node.js, Microservices",
-    image: "/images/Maxlife.png",
-  },
+    title: "Titanium Engine",
+    category: "Low-Latency Trading Engine",
+    tools: "C++17, spdlog, pthreads, CMake, x86intrin.h",
+    image: "/images/placeholder.webp",
+    description: "Low-latency C++17 order matching engine using RDTSC-based nanosecond timing with price-time priority matching in O(log n).<br/><br/>• Designed modular architecture with OrderBook, OrderValidator, achieving O(1) order cancellation via hash maps.<br/>• Implemented custom exception hierarchy and spdlog-based rotating file logging.<br/>• Reduced timestamping overhead from >100 CPU cycles to 1-2 cycles per trade via direct cycle counter calibration."
+  }
 ];
 
 const Work = () => {
@@ -109,8 +93,8 @@ const Work = () => {
                           {project.category}
                         </p>
                         <div className="carousel-tools">
-                          <span className="tools-label">Tools & Features</span>
-                          <p>{project.tools}</p>
+                          <span className="tools-label">System Architecture</span>
+                          <p dangerouslySetInnerHTML={{ __html: project.description }}></p>
                         </div>
                       </div>
                     </div>

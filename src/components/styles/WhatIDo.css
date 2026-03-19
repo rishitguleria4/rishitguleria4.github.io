@@ -31,6 +31,7 @@
 }
 .do-h2 {
   color: var(--accentColor);
+  transition: color 1.5s ease;
 }
 .what-box-in {
   flex-direction: column;
@@ -46,30 +47,33 @@
   transition: 0.5s;
   /* border: 0.5px dashed rgba(255, 255, 255, 0.3); */
   position: relative;
-  padding: 50px;
+  padding: 30px 40px;
   box-sizing: border-box;
 }
 
 .what-noTouch:hover,
 .what-content-active {
   min-height: 67%;
-  padding: 40px 50px;
+  padding: 15px 25px;
 }
 
 .what-noTouch:hover ~ .what-content,
 .what-box-in:hover .what-noTouch:not(:hover),
 .what-content.what-sibling {
   min-height: 33%;
-  padding: 10px 50px;
+  padding: 10px 30px;
 }
 .what-content h3 {
-  font-size: 35px;
+  font-size: 28px;
   letter-spacing: 1px;
   margin: 0;
+  color: var(--accentColor);
+  transition: color 1.5s ease;
 }
 .what-content p {
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 13px;
+  line-height: 16px;
+  margin: 10px 0;
   font-weight: 200;
   letter-spacing: 0.7px;
 }
@@ -77,8 +81,15 @@
   font-weight: 300;
   letter-spacing: 1px;
   margin: 0px;
-  font-size: 14px;
+  font-size: 13px;
   opacity: 0.3;
+}
+.what-content h5 {
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #fff;
 }
 .what-content-in {
   opacity: 0;
@@ -207,6 +218,18 @@
 .what-content-in {
   height: 100%;
   overflow: hidden;
+  box-sizing: border-box;
+  padding: 20px;
+  padding-right: 30px;
+  background: var(--glassBackground);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glassBorder);
+  border-radius: 12px;
+  transition: background 1.5s ease, border 1.5s ease, box-shadow 0.3s ease;
+}
+.what-content-in:hover {
+  box-shadow: var(--glowEffect);
 }
 .what-content-in h5 {
   font-weight: 300;
@@ -234,10 +257,26 @@
 .what-tags {
   font-size: 13px;
   font-weight: 400;
-  padding: 2px 7px;
-  background-color: rgba(255, 255, 255, 0.15);
-  border: 1px solid #ffffff50;
+  padding: 4px 12px;
   border-radius: 30px;
+  border: 1px solid var(--glassBorder);
+  background: rgba(255, 255, 255, 0.03);
+  color: rgba(255, 255, 255, 0.8);
+  transition: border-color 0.3s, color 0.3s;
+}
+.what-tags:hover {
+  border-color: var(--accentColor);
+  color: var(--accentColor);
+}
+.what-corner {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 15px;
+  height: 15px;
+  border-right: 2px solid var(--accentColor);
+  border-bottom: 2px solid var(--accentColor);
+  transition: border-color 1.5s ease;
 }
 @media only screen and (max-width: 1600px) {
   .what-box h2 {

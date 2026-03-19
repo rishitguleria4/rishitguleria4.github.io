@@ -6,11 +6,7 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          Full Stack Developer with 4+ years of experience building scalable web
-          applications using React.js, Angular, Next.js, Node.js, and NestJS. Skilled
-          in microservices architecture, CMS development, and low-code platforms.
-          Passionate about creating high-performance, production-ready solutions
-          from concept to deployment.
+          Elite Applied AI Engineer and Full Stack Developer. I build high-performance, intelligent backend pipelines by integrating LLMs with robust asynchronous architectures. With a strong foundation in low-latency C++ engine design and modern web frameworks (React, Next.js, Node.js), I deliver highly scalable, fault-tolerant production solutions from concept to deployment. Based in India and available for remote roles.
         </p>
       </div>
     </div>

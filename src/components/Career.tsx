@@ -5,53 +5,45 @@ const Career = () => {
     <div className="career-section section-container">
       <div className="career-container">
         <h2>
-          My career <span>&</span>
-          <br /> experience
+          Education <span>&</span>
+          <br /> Achievements
         </h2>
         <div className="career-info">
-          <div className="career-timeline">
-            <div className="career-dot"></div>
-          </div>
+          <div className="career-timeline"></div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Full Stack Developer</h4>
-                <h5>Ikshan</h5>
-              </div>
-              <h3>2020</h3>
-            </div>
-            <p>
-              Built 6+ complete applications using React.js. Integrated backend
-              authentication using Node.js & MongoDB. Created responsive UI/UX
-              and designed wireframes using Figma.
-            </p>
-          </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>Senior Full Stack Developer</h4>
-                <h5>Monocept (Max Life Insurance)</h5>
-              </div>
-              <h3>2021</h3>
-            </div>
-            <p>
-              Led two development teams on Mpro, a large-scale insurance
-              operations platform. Developed multiple modules using React.js &
-              migrated critical functionalities to Node.js microservices.
-            </p>
-          </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>Full Stack Developer</h4>
-                <h5>Logic Loop</h5>
+                <h4>Codeforces & LeetCode</h4>
+                <h5>Algorithms & Data Structures</h5>
               </div>
               <h3>NOW</h3>
             </div>
             <p>
-              Building Solid, a proprietary low-code platform using Angular,
-              Next.js & NestJS. Delivering production-ready CMS-based projects
-              including e-commerce, CRM, and import-export automation systems.
+              Solved 500+ problems across Codeforces and LeetCode. Maintained a 103-day continuous problem-solving streak on Codeforces, showcasing consistent dedication to algorithmic efficiency and competitive programming.
+            </p>
+          </div>
+          <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
+                <h4>BCA (Artificial Intelligence)</h4>
+                <h5>Rayat Bahra University</h5>
+              </div>
+              <h3>2027</h3>
+            </div>
+            <p>
+              Expected graduation July 2027. Relevant coursework includes Data Structures & Algorithms, Systems Architecture, Linear Algebra, and Probability & Statistics.
+            </p>
+          </div>
+          <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
+                <h4>Shishu Niketan</h4>
+                <h5>Senior Secondary School</h5>
+              </div>
+              <h3>2024</h3>
+            </div>
+            <p>
+              Class XII Completed (2023 - 2024). Class X Completed (2021 - 2022).
             </p>
           </div>
         </div>
