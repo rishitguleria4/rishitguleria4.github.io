@@ -1,6 +1,6 @@
-import { SplitText } from "gsap/SplitText";
+import SplitType from "split-type";
 import gsap from "gsap";
-import { smoother } from "../Navbar";
+import { lenisInst } from "../Navbar";
 
 let hasRun = false;
 
@@ -9,16 +9,14 @@ export function initialFX() {
   hasRun = true;
 
   document.body.style.overflowY = "auto";
-  smoother.paused(false);
+  if (lenisInst) lenisInst.start();
   document.getElementsByTagName("main")[0].classList.add("main-active");
   gsap.to("body", { backgroundColor: "#0a0e17", duration: 0.5, delay: 1 });
 
   // --- Intro text animation (Hello, name, h3) ---
-  // Split text FIRST, then immediately hide chars, THEN reveal parents.
-  // This ensures parents reveal with everything already invisible.
-  var landingText = new SplitText(
-    [".landing-info h3", ".landing-intro h2", ".landing-intro h1"],
-    { type: "chars,lines", linesClass: "split-line" }
+  const landingText = new SplitType(
+    ".landing-info h3, .landing-intro h2, .landing-intro h1",
+    { types: "chars,lines", lineClass: "split-line" }
   );
   gsap.set(landingText.chars, { opacity: 0, y: 80, filter: "blur(5px)" });
 
@@ -77,7 +75,10 @@ function LoopText(els: HTMLElement[], useSplitIntro: boolean) {
 
   if (useSplitIntro) {
     // Nice char-by-char entrance for first role text
-    const split = new SplitText(els[0], { type: "chars,lines", linesClass: "split-h2" });
+    const split = new SplitType(els[0], {
+      types: "chars,lines",
+      lineClass: "split-h2",
+    });
     gsap.set(split.chars, { opacity: 0, y: 30 });
     gsap.set(els[0], { opacity: 1 });
     gsap.to(split.chars, {
